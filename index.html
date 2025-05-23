@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo-container">
-                <img src="assets/images/logo.png" alt="Lexington Layers - 3D Printing in Lexington, KY" id="logo">
+                <img src="assets/images/logo.webp" loading="lazy" alt="Lexington Layers - 3D Printing in Lexington, KY" id="logo">
             </div>
         </header>
 
@@ -27,13 +28,13 @@
             <section class="slider-container">
                 <div class="slider">
                     <div class="slide">
-                        <img src="assets/images/image1.png" alt="3D Print Example 1">
+                        <img src="assets/images/image1.webp" loading="lazy" alt="3D Print Example 1">
                     </div>
                     <div class="slide">
-                        <img src="assets/images/image2.png" alt="3D Print Example 2">
+                        <img src="assets/images/image2.webp" loading="lazy" alt="3D Print Example 2">
                     </div>
                     <div class="slide">
-                        <img src="assets/images/image3.png" alt="3D Print Example 3">
+                        <img src="assets/images/image3.webp" loading="lazy" alt="3D Print Example 3">
                     </div>
                 </div>
                 <div class="slider-nav">
