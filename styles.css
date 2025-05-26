@@ -852,7 +852,7 @@ footer {
     }
 }
 
-/* Reduced motion support */
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -862,5 +862,90 @@ footer {
     
     html {
         scroll-behavior: auto;
+    }
+}
+
+.social-share {
+    margin: 30px 0 20px;
+    text-align: center;
+}
+
+.bluesky-share-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #1185fe, #0066cc);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(17, 133, 254, 0.3);
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bluesky-share-btn:hover {
+    background: linear-gradient(135deg, #0066cc, #004499);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(17, 133, 254, 0.4);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.bluesky-share-btn:active {
+    transform: translateY(0);
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.bluesky-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bluesky-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .bluesky-share-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .social-links {
+        margin-top: 15px;
+    }
+    
+    .bluesky-link {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bluesky-share-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
     }
 }
