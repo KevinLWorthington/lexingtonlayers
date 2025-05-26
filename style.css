@@ -1,10 +1,10 @@
 /* Base Styles */
 :root {
-    --primary-color: #1D5B6E; /* Teal blue from the logo */
+    --primary-color: #1D5B6E;
     --primary-dark: #0D4A5C;
     --secondary-color: #1D5B6E; 
-    --accent-color: #E3B23C; /* Gold color from the logo */
-    --light-bg: #F1EAD9; /* Updated to the requested color */
+    --accent-color: #E3B23C;
+    --light-bg: #F1EAD9;
     --dark-gray: #333;
     --text-color: #1D5B6E;
     --white: #ffffff;
